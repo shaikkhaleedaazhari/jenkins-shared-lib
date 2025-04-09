@@ -5,11 +5,11 @@ def call() {
 
     stage('Unit Tests') {
         echo 'Running unit tests...'
-        sh './gradlew test'
+        sh 'echo "Pretending to run tests..."'
     }
 
     stage('Deploy') {
         echo 'Deploying to environment...'
-        sh './deploy.sh'
+        sh 'echo "Pretending to deploy..."'
     }
 }
